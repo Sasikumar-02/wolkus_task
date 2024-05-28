@@ -1,0 +1,42 @@
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie-item img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-item h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.movie-item p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Light theme styles */
+.light-theme .movie-item {
+  background-color: lightgray;
+  color: black;
+}
+
+/* Dark theme styles */
+.dark-theme .movie-item {
+  background-color: #333;
+  color: #fff; /* Adjust text color for dark theme */
+}
