@@ -1,9 +1,8 @@
 # Movie Web Application
 
 ## Live Demo
-https://cmataiyo.netlify.app/
+https://sasiwolkustask.netlify.app
 
-#Getting Started with Create React App
 
 ## Project Overview
 
