@@ -1,4 +1,4 @@
-# Content Management App
+# Movie Web Application
 
 ## Live Demo
 https://cmataiyo.netlify.app/
@@ -7,19 +7,25 @@ https://cmataiyo.netlify.app/
 
 ## Project Overview
 
-The Content Management Application is a web-based portal that allows users to create and view the contant and also users can edit and delete the contact. The application provides a Map and Line graph to display the COVID cases data in dashboard
+The Movie Application is a web-based portal that allows users to view the different genre movies and search the already available movies and also users can add the new movies for every genre. 
 
-## Features
-- The form has various validation such as every field is a required field and the field "First Name" should have atleast two letters
-- If I edit or delete the contact, the state will be updated immediately and be automatically rendered.
-- If the user hovers on the map and clicks on any of the flags, the covid details in that particular country will be displayed as a pop-up message.
-- In Line chart, users can filter the data based on the filter option
+## Steps
+- Open the file in VS Code and type "npm install" to install the packages
+- To start the application, use the command "npm start"
+- First of all, give "Signup" button and create a login Data.
+- Then use the login credentials to login and it will open the dashboard page
+- In the header, there is a "#light_theme" and "#dark_theme" so modify for your convenient
+- In the dashboard page, You have a seach Input box to clear the already existed movies in all the genre
+- If you click the "+" icon in any one of the genre, then you can search any movies and add the movies to the genre
+- If you need to delete some movies in any genre, then click the "X" delete button to delete the movie
+- Before deletion, it will ask the confirmation
+- After all the process, Logout using the logout icon
 
 ## Technologies Used
 
 - Backend: Localstorage setup
 - Frontend: React.js, Typescript
-- Additional Libraries/Frameworks: React Router, Axios, Formik, Antd, Redux, Handwritten CSS
+- Additional Libraries/Frameworks: React Router, Axios, Formik, Antd, Handwritten CSS
 
 ## Installation
 
@@ -27,7 +33,7 @@ To install and set up the Guest Room Booking Application locally, follow these s
 
 1. Clone the repository:
    ```
-   git clone https://github.com/Sasikumar-02/frontend_task
+   git clone https://github.com/Sasikumar-02/wolkus_task
    ```
 
 2. Install dependencies:
