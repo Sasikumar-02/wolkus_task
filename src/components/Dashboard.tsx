@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { notification, Modal, Input } from 'antd';
 import MovieList from './MovieList';
+import SearchBar from './SearchBar';
 
 const { Search } = Input;
 
@@ -175,14 +176,10 @@ const Dashboard: React.FC<DashboardProps> = ({ onToggleTheme, theme }) => {
         }}
         footer={null}
       >
-        <Search
-          placeholder="Search for a movie..."
-          onChange={(e) => handleModalSearch(e.target.value)}
-          onSearch={handleModalSearch}
-          enterButton
-        />
+        <SearchBar onSearch={handleModalSearch} />
         {modalSearchQuery ? (
-          <MovieList movies={modalMovies} onMovieClick={handleAddMovieToGenre} onToggleTheme={onToggleTheme} theme={theme} />
+          <MovieList movies={modalMovies} onMovieClick={handleAddMovieToGenre}  onToggleTheme={onToggleTheme}
+          theme={theme}  />
         ) : null}
       </Modal>
     </div>
